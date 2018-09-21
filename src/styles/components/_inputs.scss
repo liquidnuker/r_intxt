@@ -1,0 +1,67 @@
+.input1-01 {
+  @extend %display--inline-block;
+  @extend %padd--4;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #000; // trbl
+  width: 80%;
+
+  &:focus {
+    outline: 2px solid #ccc;
+  }
+}
+
+.input1-02 {
+  @extend %display--inline-block;
+  @extend %padd--4;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #000; // trbl
+  width: 80%;
+
+  &:focus {
+    border-color: #000; // trbl
+  }
+}
+
+.input1-03 {
+  @extend %display--inline-block;
+  @extend %padd--4;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #000; // trbl
+  width: 80%;
+  font-size: rem(32); /* 14px/16=0.875em */
+
+  &:focus {
+    outline: 2px solid #ccc;
+  }
+}
+
+.input1-04 {
+  @extend %display--inline-block;
+  @extend %padd--4;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #fff #fff #000 #fff;
+  width: 80%;
+  
+  &:focus {
+    outline: 2px solid #ccc;
+  }
+}
+
+.input1-05 {
+  @extend %display--inline-block;
+  padding: 4px 4px 4px 30px; /* trbl */
+  background-color: #fff;
+  background: url('../img/prod48-search1.svg') no-repeat; 
+  border: 1px solid;
+  border-color: #000; // trbl
+  width: 80%;
+  
+  &:focus {
+    outline: 2px solid #ccc;
+  }
+}
