@@ -1,3 +1,20 @@
+// custom input animations
+// ==================================================/
+// @import "../vendor/animatecss/base";
+
+@keyframes resize1 {
+  from {
+    width: 30%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+// 
+// ==================================================/
+
 .input1-01 {
   @extend %display--inline-block;
   @extend %padd--4;
@@ -63,5 +80,43 @@
   
   &:focus {
     outline: 2px solid #ccc;
+  }
+}
+
+.input1-06 {
+  @extend %display--inline-block;
+  @extend %padd--4;
+
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #000; // trbl
+  width: 30%;
+    
+  &:focus {
+    animation-name: resize1;
+
+    outline: 2px solid #ccc;
+  }
+}
+
+.input1-07 {
+  @extend %display--inline-block;
+  @extend %padd--4;
+
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #fff #fff #000 #fff;
+  width: 30%;
+  
+  &:focus {
+    animation-name: resize1;
+
+    // outline: 2px solid #ccc;
   }
 }
